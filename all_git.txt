@@ -1,0 +1,210 @@
+# Configure Git username
+git config --global user.name "Niraj Kumar Thakur"
+
+# Configure Git email
+git config --global user.email "nirajkumarthakur1432@gmail.com"
+
+# Start Jenkins service
+sudo systemctl start jenkins
+
+# Enable Jenkins service during system boot
+sudo systemctl enable jenkins
+
+# Display Jenkins configuration file
+cat /etc/default/jenkins
+
+
+# Create a new Maven project using Maven archetype
+mvn archetype:generate \
+-DgroupId=com.mycompany.app \
+-DartifactId=my-app \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DarchetypeVersion=1.5 \
+-DinteractiveMode=false
+
+# Move into project directory
+cd my-app
+
+# Compile and package the Maven project
+mvn package
+
+# Execute Java application
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+
+
+# Initialize Git repository
+git init
+
+# Add pom.xml file to staging area
+git add pom.xml
+
+# Add source folder to staging area
+git add src/
+
+# Commit files into local Git repository
+git commit -m "Initial commit-Integration Jenkins"
+
+
+# Generate SSH key for GitHub authentication
+ssh-keygen -t ed25519 -C "nirajkumarthakur1432@gmail.com"
+
+# Start SSH agent service
+eval "$(ssh-agent -s)"
+
+# Add SSH private key to SSH agent
+ssh-add ~/.ssh/id_ed25519
+
+# Display SSH public key
+cat ~/.ssh/id_ed25519.pub
+
+# Test GitHub SSH authentication
+ssh -T git@github.com
+
+
+# Add GitHub remote repository
+git remote add origin git@github.com:Kala1432/Dev8.git
+
+# Rename current branch to main
+git branch -M main
+
+# Push project to GitHub repository
+git push -u origin main
+
+# Force push local repository to remote repository
+git push -u origin main --force# Start Jenkins service
+sudo systemctl start jenkins
+
+# Enable Jenkins to start automatically during boot
+sudo systemctl enable jenkins
+
+# View Jenkins configuration file
+cat /etc/default/jenkins
+
+
+# Create a new Maven Java project using archetype
+mvn archetype:generate \
+-DgroupId=com.mycompany.app \
+-DartifactId=my-app \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DarchetypeVersion=1.5 \
+-DinteractiveMode=false
+
+# Move into the created project directory
+cd my-app
+
+# Build and package the Maven project
+mvn package
+
+# Run the generated Java application
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+
+
+# Initialize a new Git repository
+git init
+
+# Add pom.xml file to Git staging area
+git add pom.xml
+
+# Add source code files to Git staging area
+git add src/
+
+# Commit the project files to local repository
+git commit -m "Initial commit-Integration Jenkins"
+
+
+# Generate SSH key for GitHub authentication
+ssh-keygen -t ed25519 -C "nirajkumarthakur1432@gmail.com"
+
+# Start SSH authentication agent
+eval "$(ssh-agent -s)"
+
+# Add SSH private key to SSH agent
+ssh-add ~/.ssh/id_ed25519
+
+# Display public SSH key
+cat ~/.ssh/id_ed25519.pub
+
+# Test GitHub SSH connection
+ssh -T git@github.com
+
+
+# Add remote GitHub repository
+git remote add origin git@github.com:your-Kala1432/prg8Dev.git
+
+# Rename branch from master to main
+git branch -M main
+
+# Push local repository to GitHub
+git push -u origin main
+
+
+# Try adding another remote repository
+git remote add origin git@github.com:your-Kala1432/Dev8.git
+
+# Remove existing remote repository
+git remote remove origin
+
+# Add correct GitHub remote repository
+git remote add origin git@github.com:Kala1432/Dev8.git
+
+# Rename branch to main
+git branch -M main
+
+# Push project to GitHub repository
+git push -u origin main
+
+# Force push local repository to overwrite remote repository
+git push -u origin main --forcesudo systemctl start jenkins
+
+sudo systemctl enable jenkins
+
+cat /etc/default/jenkins
+
+mvn archetype:generate \
+-DgroupId=com.mycompany.app \
+-DartifactId=my-app \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DarchetypeVersion=1.5 \
+-DinteractiveMode=false
+
+cd my-app
+
+mvn package
+
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+
+git init
+
+git add pom.xml
+
+git add src/
+
+git commit -m "Initial commit-Integration Jenkins"
+
+ssh-keygen -t ed25519 -C "nirajkumarthakur1432@gmail.com"
+
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/id_ed25519
+
+cat ~/.ssh/id_ed25519.pub
+
+ssh -T git@github.com
+
+git remote add origin git@github.com:your-Kala1432/prg8Dev.git
+
+git branch -M main
+
+git push -u origin main
+
+git remote add origin git@github.com:your-Kala1432/Dev8.git
+
+git remote remove origin
+
+git remote add origin git@github.com:Kala1432/Dev8.git
+
+git branch -M main
+
+git push -u origin main
+
+git push -u origin main --force
