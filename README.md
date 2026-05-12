@@ -1,2 +1,2 @@
 # experiment-6
-exp 6
+6th program in devOps lab
